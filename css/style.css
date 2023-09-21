@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+
+/* Variables */
+:root {
+  --color-primary: #f0b600;
+  --color-secondary: #760505;
+}
+
+/* Styles generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Belleza;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 400px;
+  background-color: var(--color-background);
+}
+
+/* Styles header */
+
+header {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  max-width: 1440px;
+  min-width: 400px;
+  width: 100%;
+}
+
+header .top-bar {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10%;
+}
+
+
+
+header .container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 46px;
+  color: var(--color-secondary);
+}
+
+header .container-header a {
+  color: var(--color-secondary);
+}
+
+header .container-header span {
+  color: black;
+}
+
+
+
+header .container-header .div-menu .menu {
+  position: relative;
+}
+
+header .container-header .div-menu .menu ul {
+  display: flex;
+}
+
+header .container-header .div-menu .menu ul li {
+  padding: 15px 20px;
+}
+
+header .container-header .div-menu .menu ul li:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+ul > li {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* Styles del main */
+main .title {
+  background-image: url("../img/fondo-main.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+main .title div {
+  height: 440px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0px 25px;
+}
+
+main .title div h2 {
+  padding: 8px 25px;
+  text-align: center;
+  align-items: center;
+  color: var(--color-primary);
+  font-weight: 400;
+  font-size: 5rem;
+}
+
+main .title div h3 {
+  color: whitesmoke;
+  padding: 10px;
+}
+
+main .title div a {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 15px 30px;
+  position: relative;
+  right: 20px;
+  border-radius: 7px;
+  transition: linear 0.5s;
+}
+
+#services {
+  color: whitesmoke;
+  background-color: var(--color-secondary);
+}
+
+/* Styles del form */
+
+main .contact-form {
+  padding-top: 30px;
+  background-color: var(--color-primary);
+}
+
+main .contact-form .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+main .contact-form .contact h2 {
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+
+main .contact-form .contact input {
+  background-color: var(--color-secondary);
+  width: 298px;
+  height: 40px;
+  color: whitesmoke;
+  border-radius: 15px;
+  border-style: none;
+}
+
+main .contact-form .contact div {
+  display: flex;
+  gap: 10px;
+  padding: 30px;
+}
+
+main .contact-form .contact div input {
+  width: 120px;
+}
+
+main .contact-form .contact div input[type="submit"] {
+  background-color: #104c0f;
+  transition: linear 0.5s;
+}
+
+main .contact-form .contact div input[type="reset"] {
+  background-color: #104c0f;
+  transition: linear 0.5s;
+}
+
+/* Style del botón */
+.button-style,
+main .title div a:hover,
+main .contact-form .contact div input[type="submit"]:hover,
+main .contact-form .contact div input[type="reset"]:hover {
+  background-color: var(--color-primar);
+  color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+/* Style  del footer */
+.img-footer-style,
+footer div .localidad,
+footer div .tel-footer,
+footer div .img-mail {
+  background-color: var(--color-gray);
+  font-size: 2rem;
+  height: 55px;
+  width: 55px;
+  border-style: outset;
+  border-radius: 50%;
+  border-color: rgba(97, 94, 94, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer div {
+  width: 100%;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(14, 20px);
+  color: whitesmoke;
+}
+
+footer div .logo-footer {
+  grid-column-start: 15;
+  grid-column-end: 18;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  display: flex;
+  gap: 5px;
+}
+
+footer div .logo-footer span {
+  color: var(--color-primary);
+}
+
+footer div .localidad {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 7;
+}
+
+footer div .localidad + h3 {
+  font-size: 1rem;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+footer div .localidad + h3 + h4 {
+  font-size: 0.6rem;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  color: whitesmoke;
+}
+
+footer div .tel-footer {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 11;
+}
+
+footer div .tel-footer + h3 {
+  font-size: var(--font-size-small);
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+footer div .tel-footer + h3 + h4 {
+  font-size: 0.6rem;
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  color: whitesmoke;
+}
+
+footer div .img-mail {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 10;
+  grid-row-end: 13;
+}
+
+footer div .img-mail + h3 {
+  font-size: var(--font-size-small);
+  grid-column-start: 8;
+  grid-column-end: 4;
+  grid-row-start: 10;
+  grid-row-end: 11;
+}
+
+footer div .img-mail + h3 + h4 {
+  font-size: 0.6rem;
+  grid-column-start: 8;
+  grid-column-end: 4;
+  grid-row-start: 11;
+  grid-row-end: 12;
+}
+
+footer div h2 {
+  background-color: #222222;
+  box-sizing: unset;
+  font-size: 1rem;
+  font-weight: 400;
+  grid-column-start: 1;
+  grid-column-end: 21;
+  grid-row-start: 14;
+  grid-row-end: 15;
+  height: 20px;
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Media query tablet */
+@media screen and (max-width: 768px) {
+  body {
+    max-width: 810px;
+  }
+
+  header .top-bar {
+    display: none;
+  }
+
+  header .container-header .div-menu label {
+    display: block;
+  }
+  header .container-header .div-menu .menu {
+    position: absolute;
+    top: -70%;
+    right: 0;
+    transition: all 0.5s;
+  }
+
+  header .container-header .div-menu .menu ul {
+    background-color: var(--color-primary);
+    flex-direction: column;
+  }
+
+  header .container-header .div-menu .menu ul li {
+    border: solid 1px var(--color-secondary);
+  }
+
+main .title div h2 {
+  font-size: 3rem;
+}
+}
+
+/* Media query mobile */
+@media screen and (max-width: 480px) {
+  main .title {
+    background-image: url("../img/fondo-main2.jpg");
+  }
+
+  main .contact-form .subscribe div {
+    display: flex;
+  }
+
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  footer div .logo-footer {
+    margin-top: 20px;
+  }
+
+  footer div div {
+    margin-top: 20px;
+  }
+
+  #grid-magos{
+    flex-direction: column;
+  }
+
+
+
+}
+
+
+#grid-magos {
+  
+display: flex;
+flex-wrap: wrap;
+gap: 3rem;
+align-items: center;
+justify-content: center;
+padding: 3rem;
+background-image:url(../img/fondo-main3.jpg) ;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border: #222222 2px solid;
+  width: 100%; 
+  max-width: 400px; 
+  margin: 1rem; 
+  padding: 1rem;
+  text-align: center; 
+  background-color: #760505; 
+  color: whitesmoke;
+  border-radius: 10px; 
+ 
+}
+
+.card:hover {
+  background-color: #104c0f;
+  transition: linear 0.5s;
+  cursor: pointer;
+
+}
+
+.img-mago {
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
+  border-radius: 50%; 
+}
+
+.carrito {
+  width: 50px; 
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+
+#magos {
+  background-color: var(--color-primary);
+  padding: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #760505;
+}
+
+.page-section {
+ padding: 2rem;
+}
+
