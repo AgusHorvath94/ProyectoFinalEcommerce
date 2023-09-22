@@ -32,13 +32,6 @@ header {
   width: 100%;
 }
 
-header .top-bar {
-  background-color: #222222;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 10%;
-}
 
 
 
@@ -257,7 +250,7 @@ footer {
 /* Media query tablet */
 @media screen and (max-width: 768px) {
   body {
-    max-width: 768px;
+    width: 100%;
   }
 
   header .top-bar {
@@ -302,13 +295,12 @@ footer {
 /* Media query mobile */
 @media screen and (max-width: 480px) {
   body {
-    max-width: 480px;
+    width: 100%;
   }
 
-  main .title {
-    background-image: url("../img/fondo-main2.jpg");
-  }
-
+h1 {
+  font-size: 3rem;
+}
   main .contact-form .subscribe div {
     display: flex;
   }
@@ -332,7 +324,19 @@ footer {
     flex-direction: column;
   }
 
+  .mi-clase {
+    font-size: 1.15rem !important;
+  }
 
+  main .contact-form .contact input {
+    width: 400px;
+    height: 4rem;
+    
+  }
+
+  main .contact-form .contact div {
+    gap: 3rem;
+  }
 
 }
 
