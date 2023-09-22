@@ -40,6 +40,8 @@ header .top-bar {
   padding: 6px 10%;
 }
 
+
+
 header .container-header {
   display: flex;
   justify-content: space-between;
@@ -55,6 +57,8 @@ header .container-header a {
 header .container-header span {
   color: black;
 }
+
+
 
 header .container-header .div-menu .menu {
   position: relative;
@@ -204,11 +208,14 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
 }
 
 .footer-item > div > h4 {
+
   font-size: 1rem;
 }
+
 
 .footer-content {
   display: flex;
@@ -216,6 +223,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .footer-info {
@@ -223,6 +231,7 @@ footer {
   gap: 6rem;
   justify-content: center;
   align-items: center;
+
 }
 
 .footer-item {
@@ -241,7 +250,10 @@ footer {
   justify-content: center;
   border-radius: 50%;
   border: solid 2px;
+  color: whitesmoke;
 }
+
+
 
 .footer-copy {
   text-align: center;
@@ -253,7 +265,9 @@ footer {
   color: whitesmoke;
   font-size: 1rem;
   text-align: center;
+  
 }
+
 
 /* Media query tablet */
 @media screen and (max-width: 768px) {
@@ -284,20 +298,20 @@ footer {
     border: solid 1px var(--color-secondary);
   }
 
-  main .title div h2 {
-    font-size: 3rem;
-  }
-  footer {
-    flex-direction: column; /* Cambia a columna para tablet */
-    text-align: center; /* Alinea el contenido al centro en tablet */
-  }
-  .footer-info {
-    flex-direction: column;
-    gap: 2rem; /* Ajusta el espacio entre elementos en tablet */
-  }
-  .footer-logo {
-    margin-top: 20px;
-  }
+main .title div h2 {
+  font-size: 3rem;
+}
+footer {
+  flex-direction: column; /* Cambia a columna para tablet */
+  text-align: center; /* Alinea el contenido al centro en tablet */
+}
+.footer-info {
+  flex-direction: column; 
+  gap: 2rem; /* Ajusta el espacio entre elementos en tablet */
+}
+.footer-logo {
+  margin-top: 20px; 
+}
 }
 
 /* Media query mobile */
@@ -325,19 +339,25 @@ footer {
     margin-top: 20px;
   }
 
-  #grid-magos {
+  #grid-magos{
     flex-direction: column;
   }
+
+
+
 }
 
+
 #grid-magos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  align-items: center;
-  justify-content: center;
-  padding: 3rem;
-  background-image: url(../img/fondo-main3.jpg);
+  
+display: flex;
+flex-wrap: wrap;
+gap: 3rem;
+align-items: center;
+justify-content: center;
+padding: 3rem;
+background-image:url(../img/fondo-main3.jpg                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ) ;
+
 }
 
 .card {
@@ -346,33 +366,36 @@ footer {
   align-items: center;
   gap: 1rem;
   border: #222222 2px solid;
-  width: 100%;
-  max-width: 400px;
-  margin: 1rem;
+  width: 100%; 
+  max-width: 400px; 
+  margin: 1rem; 
   padding: 1rem;
-  text-align: center;
-  background-color: #760505;
+  text-align: center; 
+  background-color: #760505; 
   color: whitesmoke;
-  border-radius: 10px;
+  border-radius: 10px; 
+ 
 }
 
 .card:hover {
   background-color: #104c0f;
   transition: linear 0.5s;
   cursor: pointer;
+
 }
 
 .img-mago {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 50%;
+  width: 100%; 
+  max-width: 300px; 
+  height: auto; 
+  border-radius: 50%; 
 }
 
 .carrito {
-  width: 50px;
+  width: 50px; 
   cursor: pointer;
   border-radius: 50%;
+
 }
 
 #magos {
@@ -384,5 +407,11 @@ footer {
 }
 
 .page-section {
-  padding: 2rem;
+ padding: 2rem;
+}
+
+audio {
+  visibility: hidden;
+  width: 0%;
+  height: 0%;
 }
