@@ -1,4 +1,4 @@
-fetch("json/magos.json")
+fetch("/json/magos.json")
   .then((respuesta) => respuesta.json())
   .then((datos) => localStorage.setItem("magos", JSON.stringify(datos)));
 
