@@ -5,7 +5,7 @@
     "magos": [
       {
         "title": "Albus Dumbledore",
-        "img": "../img/albus-dumbledore.webp",
+        "img": "../img/albus-dumbledore.jpg",
         "alt": "Dumbledore",
         "description": "El anciano mago es el personaje más fuerte de la franquicia, donde ha demostrado en varias ocasiones su increíble poder. El propio Lord Voldemort tenía miedo de enfrentarse a él y todo el mundo en Hogwarts siente un profundo respeto y admiración hacia el mago",
         "id" : "1",
@@ -14,7 +14,7 @@
       },
       {
         "title": "Minerva McGonagall",
-        "img": "../img/minerva-mcgonagall.webp",
+        "img": "../img/minerva-mcgonagall.jpg",
         "alt": "Minerva",
         "description": "La subdirectora de Hogwarts es una de las profesoras más queridas, pero bajo ese aspecto tierno también se esconde una gran animaga muy poderosa. Se presenta como una maga especialista en transformaciones y demostró su talento en ciertas ocasiones. En la Batalla de Hogwarts, Minerva transformó docenas de mesas y armaduras para defender la escuela de Lord Voldemort",
         "id" : "2",
@@ -22,7 +22,7 @@
       },
       {
         "title": "Lord Voldemort",
-        "img": "../img/lord-voldemort.webp",
+        "img": "../img/lord-voldemort.jpg",
         "alt": "Voldemort",
         "description": "Su nombre menos conocido es Tom Riddle y es un maestro de todas las disciplinas mágicas. Según Dumbledore, Lord Voldemort era el estudiante más brillante que jamás ha visto en Hogwarts y lo demuestra en cada enfrentamiento. Es un mago experto en las Artes Oscuras que utilizó para dividir su alma en ocho partes distintas (Horrocruxes) sin morir y esto sólo lo hizo más débil. Según una profecía, sólo un ser podría destruirlo, así que Voldemort persiguió a Harry Potter para matarlo",
         "id" : "3",
@@ -30,7 +30,7 @@
       },
       {
         "title": "Bellatrix Lestrange",
-        "img": "../img/bellatrix-lestrange.webp",
+        "img": "../img/bellatrix-lestrange.jpg",
         "alt": "Bella",
         "description": "Entrenada por Lord Voldemort en las artes oscuras. Es especialista en las maldiciones imperdonables y otros hechizos oscuros reservados para los magos más capacitados. Conoce a la perfección la maldición Cruciatus, uno de los hechizos más poderosos y siniestros del mundo mágico, y que utiliza para generar un dolor intenso",
         "id" : "4",
@@ -38,7 +38,7 @@
       },
       {
         "title": "Severus Snape",
-        "img": "../img/severus-snape.webp",
+        "img": "../img/severus-snape.jpg",
         "alt": "Severus",
         "description": "Es un mago realmente talentoso que domina muchas disciplinas, incluida la Legeremancia y Oclumancia. Y es un especialista increíble para hacer sus propias pociones, de lo que sería profesor en Hogwarts. También es un experto creando muchos hechizos útiles para los Mortífagos. Sirius Black confirmó que Severus Snape conocía más sobre las Artes Oscuras que cualquiera en el séptimo año de la escuela. Y consiguió algo imposible para cualquier mortífago, ya que fue el único capaz de producir un Patronus",
         "id" : "5",
@@ -47,7 +47,7 @@
       },
       {
         "title": "Sirius Black",
-        "img": "../img/sirius-black.webp",
+        "img": "../img/sirius-black.jpg",
         "alt": "Sirius",
         "description": "Este personaje tan enigmático es toda una leyenda y un mago muy poderoso según la propia Minerva McGonagall. Se convirtió en animago muy pronto con habilidades para realizar la transfiguración humana de manera no verbal incluso. Esto lo demostró junto a su amigo Remus Lupin, obligando a Peter Pettigrew a abandonar su forma de animago. Esto refleja el poder inmenso del mago que utilizó su talento en contables ocasiones",
         "id" : "6",
