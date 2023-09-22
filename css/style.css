@@ -316,6 +316,10 @@ footer {
 
 /* Media query mobile */
 @media screen and (max-width: 480px) {
+  body {
+    max-width: 480px;
+  }
+
   main .title {
     background-image: url("../img/fondo-main2.jpg");
   }
@@ -367,7 +371,7 @@ background-image:url(../img/fondo-main3.jpg);                                   
   gap: 1rem;
   border: #222222 2px solid;
   width: 100%; 
-  max-width: 400px; 
+  max-width: 300px; 
   margin: 1rem; 
   padding: 1rem;
   text-align: center; 
