@@ -409,9 +409,3 @@ background-image:url(../img/fondo-main3.jpg                                     
 .page-section {
  padding: 2rem;
 }
-
-audio {
-  visibility: hidden;
-  width: 0%;
-  height: 0%;
-}
