@@ -47,3 +47,23 @@ fetch("../json/magos.json")
     window.location.href = `mago.html?id=${mago.id}`;
   }
   
+  // Formulario 
+  const form = document.querySelector(".contact");
+  const errorMessage = document.getElementById("error-message");
+  
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+
+    const name = document.getElementById("contact-name").value;
+    const email = document.getElementById("contact-email").value;
+    const phone = document.getElementById("contact-phone").value;
+
+    
+    if (name.trim() === "" || email.trim() === "" || phone.trim() === "") {
+      errorMessage.textContent = "Todos los campos son obligatorios.";
+    } else {
+
+      errorMessage.textContent = "Formulario enviado con éxito.";
+      form.reset(); 
+    }
+  });

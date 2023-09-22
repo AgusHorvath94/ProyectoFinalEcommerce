@@ -106,14 +106,11 @@
     <!-- Acá mostramos los detalles del mago -->
   </div>
 
-
-
-
-
     <!-- section form -->
     <!-- contact -->
     <section class="contact-form" id="form">
-      <form action="POST" class="contact">
+      <div class="contact" id="contacto">
+      <form action="https://formsubmit.co/agushorvath994@gmail.com" method="POST" >
         <h2>Contáctanos</h2>
         <input type="text" name="contact-name" id="contact-name" placeholder="  Nombre y Apellido" />
         <input type="email" name="contact-email" id="contact-email" placeholder="  Ingresá tu correo electrónico" />
@@ -122,25 +119,49 @@
           <input type="reset" value="Resetear" />
           <input type="submit" value="Enviar" />
         </div>
+        <div id="error-message" class="error-message"></div>
       </form>
-    
+    </div>
   </main>
 
   <footer>
-    <div id="contacto">
-   
-      <div class="localidad"><i class="fas fa-map-marked-alt"></i></div>
-      <h3>Localidad</h3>
-      <h4>HOWARTS - ESCUELA DE MAGIA</h4>
-      <div class="tel-footer"><i class="fas fa-phone-volume"></i></div>
-      <h3>Número de teléfono</h3>
-      <h4>111-LEVIOSA-666</h4>
-      <div class="img-mail"><i class="fa-regular fa-envelope"></i></div>
-      <h3>Correo Electrónico</h3>
-      <h4>DUMBELDORE@GMAIL.COM</h4>
-      <h2 class="h2-footer">Todos los derechos reservados</h2>
+    <div class="footer-content">
+      <div class="footer-info">
+        <div class="footer-item">
+          <div class="footer-icon">
+            <i class="fas fa-map-marked-alt"></i>
+          </div>
+          <div>
+          <h3>Localidad</h3>
+          <h4>HOWARTS - ESCUELA DE MAGIA</h4>
+        </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-icon">
+            <i class="fas fa-phone-volume"></i>
+          </div>
+          <div>
+          <h3>Número de teléfono</h3>
+          <h4>111-LEVIOSA-666</h4>
+        </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-icon">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div>
+          <h3>Correo Electrónico</h3>
+          <h4>DUMBELDORE@GMAIL.COM</h4>
+        </div>
+        </div>
+      </div>
     </div>
+  
+    
+ 
   </footer>
+  <h2 class="h2-final">Todos los derechos reservados</h2>
+  
 
   <!-- Bootstrap JavaScript Libraries -->
       

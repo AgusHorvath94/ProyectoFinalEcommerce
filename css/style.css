@@ -40,8 +40,6 @@ header .top-bar {
   padding: 6px 10%;
 }
 
-
-
 header .container-header {
   display: flex;
   justify-content: space-between;
@@ -57,8 +55,6 @@ header .container-header a {
 header .container-header span {
   color: black;
 }
-
-
 
 header .container-header .div-menu .menu {
   position: relative;
@@ -139,15 +135,17 @@ main .title div a {
 /* Styles del form */
 
 main .contact-form {
-  padding-top: 30px;
+  padding-top: 60px;
   background-color: var(--color-primary);
 }
 
-main .contact-form .contact {
+form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  width: ;
 }
 
 main .contact-form .contact h2 {
@@ -171,7 +169,7 @@ main .contact-form .contact div {
 }
 
 main .contact-form .contact div input {
-  width: 120px;
+  width: 130px;
 }
 
 main .contact-form .contact div input[type="submit"] {
@@ -198,135 +196,69 @@ main .contact-form .contact div input[type="reset"]:hover {
 }
 
 /* Style  del footer */
-.img-footer-style,
-footer div .localidad,
-footer div .tel-footer,
-footer div .img-mail {
-  background-color: var(--color-gray);
-  font-size: 2rem;
-  height: 55px;
-  width: 55px;
-  border-style: outset;
-  border-radius: 50%;
-  border-color: rgba(97, 94, 94, 0.7);
+footer {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: 5rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-footer div {
-  width: 100%;
-  background-color: var(--color-secondary);
-  color: var(--color-text);
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: repeat(14, 20px);
-  color: whitesmoke;
+.footer-item > div > h4 {
+  font-size: 1rem;
 }
 
-footer div .logo-footer {
-  grid-column-start: 15;
-  grid-column-end: 18;
-  grid-row-start: 6;
-  grid-row-end: 9;
+.footer-content {
   display: flex;
-  gap: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-footer div .logo-footer span {
-  color: var(--color-primary);
+.footer-info {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
 }
 
-footer div .localidad {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 7;
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-footer div .localidad + h3 {
-  font-size: 1rem;
-  grid-column-start: 4;
-  grid-column-end: 8;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.footer-icon {
+  background-color: var(--color-primary);
+  font-size: 2rem;
+  min-width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: solid 2px;
 }
 
-footer div .localidad + h3 + h4 {
-  font-size: 0.6rem;
-  grid-column-start: 4;
-  grid-column-end: 8;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  color: whitesmoke;
-}
-
-footer div .tel-footer {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 6;
-  grid-row-end: 11;
-}
-
-footer div .tel-footer + h3 {
-  font-size: var(--font-size-small);
-  grid-column-start: 4;
-  grid-column-end: 9;
-  grid-row-start: 6;
-  grid-row-end: 7;
-}
-
-footer div .tel-footer + h3 + h4 {
-  font-size: 0.6rem;
-  grid-column-start: 4;
-  grid-column-end: 9;
-  grid-row-start: 7;
-  grid-row-end: 8;
-  color: whitesmoke;
-}
-
-footer div .img-mail {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 10;
-  grid-row-end: 13;
-}
-
-footer div .img-mail + h3 {
-  font-size: var(--font-size-small);
-  grid-column-start: 8;
-  grid-column-end: 4;
-  grid-row-start: 10;
-  grid-row-end: 11;
-}
-
-footer div .img-mail + h3 + h4 {
-  font-size: 0.6rem;
-  grid-column-start: 8;
-  grid-column-end: 4;
-  grid-row-start: 11;
-  grid-row-end: 12;
-}
-
-footer div h2 {
-  background-color: #222222;
-  box-sizing: unset;
-  font-size: 1rem;
-  font-weight: 400;
-  grid-column-start: 1;
-  grid-column-end: 21;
-  grid-row-start: 14;
-  grid-row-end: 15;
-  height: 20px;
-  padding: 10px 0px;
+.footer-copy {
   text-align: center;
-  width: 100%;
+  margin-top: 2rem;
+}
+
+.h2-final {
+  background-color: #222222;
+  color: whitesmoke;
+  font-size: 1rem;
+  text-align: center;
 }
 
 /* Media query tablet */
 @media screen and (max-width: 768px) {
   body {
-    max-width: 810px;
+    max-width: 768px;
   }
 
   header .top-bar {
@@ -352,9 +284,20 @@ footer div h2 {
     border: solid 1px var(--color-secondary);
   }
 
-main .title div h2 {
-  font-size: 3rem;
-}
+  main .title div h2 {
+    font-size: 3rem;
+  }
+  footer {
+    flex-direction: column; /* Cambia a columna para tablet */
+    text-align: center; /* Alinea el contenido al centro en tablet */
+  }
+  .footer-info {
+    flex-direction: column;
+    gap: 2rem; /* Ajusta el espacio entre elementos en tablet */
+  }
+  .footer-logo {
+    margin-top: 20px;
+  }
 }
 
 /* Media query mobile */
@@ -382,25 +325,19 @@ main .title div h2 {
     margin-top: 20px;
   }
 
-  #grid-magos{
+  #grid-magos {
     flex-direction: column;
   }
-
-
-
 }
 
-
 #grid-magos {
-  
-display: flex;
-flex-wrap: wrap;
-gap: 3rem;
-align-items: center;
-justify-content: center;
-padding: 3rem;
-background-image:url(../img/fondo-main3.jpg) ;
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background-image: url(../img/fondo-main3.jpg);
 }
 
 .card {
@@ -409,36 +346,33 @@ background-image:url(../img/fondo-main3.jpg) ;
   align-items: center;
   gap: 1rem;
   border: #222222 2px solid;
-  width: 100%; 
-  max-width: 400px; 
-  margin: 1rem; 
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
   padding: 1rem;
-  text-align: center; 
-  background-color: #760505; 
+  text-align: center;
+  background-color: #760505;
   color: whitesmoke;
-  border-radius: 10px; 
- 
+  border-radius: 10px;
 }
 
 .card:hover {
   background-color: #104c0f;
   transition: linear 0.5s;
   cursor: pointer;
-
 }
 
 .img-mago {
-  width: 100%; 
-  max-width: 300px; 
-  height: auto; 
-  border-radius: 50%; 
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
 }
 
 .carrito {
-  width: 50px; 
+  width: 50px;
   cursor: pointer;
   border-radius: 50%;
-
 }
 
 #magos {
@@ -450,6 +384,5 @@ background-image:url(../img/fondo-main3.jpg) ;
 }
 
 .page-section {
- padding: 2rem;
+  padding: 2rem;
 }
-
