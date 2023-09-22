@@ -53,13 +53,32 @@
 
   <main>
     <!-- Bienvenida -->
-    <div class="title">
-      <div>
-        <h2>¡Bienvenidos a Hechizolandia!</h2>
-        <h3>¡Vemos que te encanta la magia... como a nosotros!</h3>
-        <a href="#services">+ INFO</a><br>
+    <h1>¡Bienvenidos a Hechizolandia!</h1>
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/HARRY1.jpg" class="d-block w-100" alt="carrou1">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/HARRY2 (2).jpg" class="d-block w-100" alt="carrou2">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/HARRY3.jpg" class="d-block w-100" alt="carrou3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </div>
+      
+      </section>
+      
     <!-- Services-->
     <section class="page-section" id="services">
       <div class="container">
@@ -75,7 +94,7 @@
                     
                   </span>
                   <h4 class="my-3">Compra segura</h4>
-                  <p class="text-muted">Tu compra sobre cualquier mago se encuentra resguardada.</p>
+                  <p class="text-muted mi-clase">Tu compra sobre cualquier mago se encuentra resguardada.</p>
               </div>
               <div class="col-md-4">
                   <span class="fa-stack fa-4x">
@@ -84,7 +103,7 @@
                     </svg>
                   </span>
                   <h4 class="my-3">Clasificaciones de poder</h4>
-                  <p class="text-muted">Toda la info disponible sobre cada mago y sus habilidades</p>
+                  <p class="text-muted mi-clase">Toda la info disponible sobre cada mago y sus habilidades</p>
               </div>
               <div class="col-md-4">
                   <span class="fa-stack fa-4x">
@@ -93,7 +112,7 @@
                     </svg>
                   </span>
                   <h4 class="my-3">Cobertura de hechizos</h4>
-                  <p class="text-muted">Garantia contra consecuencias de hechizos mal realizados.</p>
+                  <p class="text-muted mi-clase">Garantia contra consecuencias de hechizos mal realizados.</p>
               </div>
           </div>
       </div>

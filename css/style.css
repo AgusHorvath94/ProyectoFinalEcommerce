@@ -90,50 +90,35 @@ li {
 }
 
 /* Styles del main */
-main .title {
-  background-image: url("../img/fondo-main.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px); /* Opcional: puedes añadir una pequeña transición vertical */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-main .title div {
-  height: 440px;
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 0px 25px;
-}
-
-main .title div h2 {
-  padding: 8px 25px;
+h1 {
+  background-color: var(--color-secondary);
+  font-size: 4rem;
+  color: #f0b600;
   text-align: center;
-  align-items: center;
-  color: var(--color-primary);
-  font-weight: 400;
-  font-size: 5rem;
-}
-
-main .title div h3 {
-  color: whitesmoke;
-  padding: 10px;
-}
-
-main .title div a {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  padding: 15px 30px;
-  position: relative;
-  right: 20px;
-  border-radius: 7px;
-  transition: linear 0.5s;
+  margin-bottom: -0.25rem;
+  padding: 2rem;
+  animation: fadeIn 3s ease; /* Duración y función de temporización personalizables */
 }
 
 #services {
   color: whitesmoke;
   background-color: var(--color-secondary);
+}
+
+.mi-clase {
+  color: whitesmoke !important;
 }
 
 /* Styles del form */
@@ -302,12 +287,12 @@ main .title div h2 {
   font-size: 3rem;
 }
 footer {
-  flex-direction: column; /* Cambia a columna para tablet */
-  text-align: center; /* Alinea el contenido al centro en tablet */
+  flex-direction: column; 
+  text-align: center; 
 }
 .footer-info {
   flex-direction: column; 
-  gap: 2rem; /* Ajusta el espacio entre elementos en tablet */
+  gap: 2rem; 
 }
 .footer-logo {
   margin-top: 20px; 
@@ -353,14 +338,13 @@ footer {
 
 
 #grid-magos {
-  
-display: flex;
+background-image: url(../img/fondo-main3.jpg);   
+display : flex;
 flex-wrap: wrap;
 gap: 3rem;
-align-items: center;
-justify-content: center;
-padding: 3rem;
-background-image:url(../img/fondo-main3.jpg);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ) ;
+align-items : center;
+justify-content : center;
+padding: 3rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ) ;
 
 }
 
