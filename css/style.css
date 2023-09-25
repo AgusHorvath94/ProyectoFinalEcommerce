@@ -361,12 +361,7 @@ padding: 3rem;                                                                  
   border-radius: 50%; 
 }
 
-.carrito {
-  width: 50px; 
-  cursor: pointer;
-  border-radius: 50%;
 
-}
 
 #magos {
   background-color: var(--color-primary);
