@@ -15,10 +15,8 @@
 
 body {
   font-family: Belleza;
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  min-width: 400px;
   background-color: var(--color-background);
 }
 
@@ -190,10 +188,7 @@ footer .footer-content .footer-info{
 }
 /* Media query tablet */
 @media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    max-width: 100%;
-  }
+
 
   h1 {
     font-size: 3rem;
@@ -229,10 +224,7 @@ footer .footer-content .footer-info{
 
 /* Media query mobile */
 @media screen and (max-width: 375px) {
-  body {
-    width: 100%;
-    max-width: 100%;
-  }
+
 
 h1 {
   font-size: 3rem;
