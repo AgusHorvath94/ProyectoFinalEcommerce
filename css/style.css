@@ -259,6 +259,10 @@ footer {
     max-width: 100%;
   }
 
+  h1 {
+    font-size: 3rem;
+  }
+
 
 main .title div h2 {
   font-size: 3rem;
@@ -284,7 +288,7 @@ footer {
   }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
   footer div {
