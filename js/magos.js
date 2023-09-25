@@ -19,7 +19,7 @@
                         const magoTemplate = `
                          <h1> ${magoElegido.name}</h1>
                           <img src="${magoElegido.image}" alt="${magoElegido.name}">
-                        
+
                           <p>Especie: ${magoElegido.species}</p>
                           <p>Género: ${magoElegido.gender}</p>
                           <p>Casa: ${magoElegido.house}</p>
