@@ -30,6 +30,7 @@
   
   .mago-details img {
     border-radius: 1rem;
+  
   }
   
   .mago-details button {
@@ -63,6 +64,10 @@
       width: 200px; 
       height: 50px; 
     }
+
+    .mago-details img {
+      width: 200px;
+    }
   }
   
   /* Media query para dispositivos móviles */
@@ -76,6 +81,10 @@
       width: 150px; 
       height: 100px; 
       font-size: 1rem;
+    }
+
+    .mago-details img {
+      width: 150px;
     }
   }
   
