@@ -22,6 +22,24 @@ body {
 
 /* Styles header */
 
+.container .navbar-brand  {
+
+  font-size: 2rem;
+  color: var(--color-secondary);
+
+}
+
+
+.container .navbar-brand  span{
+
+  color: black;
+
+}
+
+.container {
+  gap: 5rem;
+}
+
 .navbar {
   background-color: var(--color-primary) !important;
 
@@ -29,7 +47,7 @@ body {
 
 .navbar ul li a {
   color: var(--color-secondary) !important;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 .navbar ul li a:hover {
   color: whitesmoke !important;
@@ -38,7 +56,11 @@ body {
 }
 
 
-
+.navbar-brand img {
+  border-radius: 40%;
+  width: 85px;
+  height: 85px;
+}
 
 
 
@@ -81,6 +103,15 @@ h1 {
   justify-content: center;
   padding: 4rem;
   gap: 2rem;
+}
+
+#services h2{
+  background-color: var(--color-secondary);
+  color: whitesmoke;
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  
 }
 
 
@@ -163,8 +194,12 @@ footer .footer-content .footer-info{
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  
 
+}
 
+.footer-h4 {
+font-size: 0.9rem !important;
 }
 
 .footer-item {
@@ -186,6 +221,8 @@ footer .footer-content .footer-info{
   border: solid 2px;
   color: whitesmoke;
 }
+
+
 /* Media query tablet */
 @media screen and (max-width: 768px) {
 
@@ -220,6 +257,10 @@ footer .footer-content .footer-info{
 
 }
 
+.footer-h4 {
+  font-size: 1.25rem !important;
+  }
+
 }
 
 /* Media query mobile */
@@ -230,7 +271,10 @@ h1 {
   font-size: 3rem;
 }
 
-
+.navbar-brand img {
+  width: 60px;
+  height: 60px;
+}
 
   #grid-magos{
     flex-direction: column;
@@ -276,6 +320,8 @@ h1 {
 .botones {
   width : 300px
 }
+
+
 
 }
 
