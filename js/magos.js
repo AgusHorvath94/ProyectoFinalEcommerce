@@ -15,7 +15,7 @@
 
                   
                       if (magoElegido) {
-                        // Crear un template literal con los detalles del mago
+                        // Template literal con los detalles del mago
                         const magoTemplate = `
                          <h1> ${magoElegido.name}</h1>
                           <img src="${magoElegido.image}" alt="${magoElegido.name}">

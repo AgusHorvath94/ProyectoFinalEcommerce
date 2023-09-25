@@ -8,20 +8,20 @@ fetch("magos.json")
   
     if (datosMagos) {
       datosMagos.magos.forEach((mago) => {
-        // Creamos un elemento <div> para cada mago (la tarjeta)
+        //* Creamos un elemento <div> para cada mago 
         const magoCard = document.createElement("div");
-        magoCard.classList.add("card"); // Agregamos la clase "card" para darle estilo
+        magoCard.classList.add("card"); 
   
-        // Creamos una imagen para la foto del mago
+        //* Creamos una imagen para la foto del mago
         const imagenMago = document.createElement("img");
         imagenMago.classList.add("img-mago");
-        imagenMago.src = mago.image; // Tomamos la URL de la imagen del JSON
+        imagenMago.src = mago.image; 
   
-        // Creamos una etiqueta h4 con el título del mago
+        //* Creamos una etiqueta h4 con el título del mago
         const tituloMago = document.createElement("h4");
         tituloMago.textContent = mago.name;
   
-        // Creamos un icono de compra
+        //* Creamos un icono de compra
         const iconoCompra = document.createElement("p");
         iconoCompra.classList.add("carrito");
         const carritoTemplate = ` <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
@@ -29,17 +29,17 @@ fetch("magos.json")
       </svg>`;
         iconoCompra.innerHTML = carritoTemplate 
   
-        // Agregamos la imagen, el título y el icono de compra a la tarjeta
+        //* Agregamos la imagen, el título y el icono de compra a la tarjeta
         magoCard.appendChild(imagenMago);
         magoCard.appendChild(tituloMago);
         magoCard.appendChild(iconoCompra);
   
-        // Agregamos un evento de clic a la tarjeta para mostrar los detalles del mago
+        //* Agregamos un evento de click a la tarjeta para mostrar los detalles del mago
         magoCard.addEventListener("click", () => {
           mostrarDetallesMago(mago);
         });
   
-        // Agregamos la tarjeta al contenedor gridMagos
+        //* Agregamos la tarjeta al contenedor gridMagos
         gridMagos.appendChild(magoCard);
       });
     }
