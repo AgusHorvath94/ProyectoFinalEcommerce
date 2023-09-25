@@ -24,7 +24,7 @@ fetch("magos.json")
         // Creamos un icono de compra
         const iconoCompra = document.createElement("img");
         iconoCompra.classList.add("carrito");
-        iconoCompra.src = "./img/compras.jpg"; // Cambia la ruta según la ubicación de tu imagen de carrito
+        iconoCompra.src = "compras.jpg"; // Cambia la ruta según la ubicación de tu imagen de carrito
   
         // Agregamos la imagen, el título y el icono de compra a la tarjeta
         magoCard.appendChild(imagenMago);
