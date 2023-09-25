@@ -23,7 +23,7 @@
                           <p>Especie: ${magoElegido.species}</p>
                           <p>Género: ${magoElegido.gender}</p>
                           <p>Casa: ${magoElegido.house}</p>
-                          <p>Fecha de Nacimiento: ${magoElegido.dateOfBirth}
+                          <p>Fecha de Nacimiento: <br> ${magoElegido.dateOfBirth}
                           <p>Año de Nacimiento: ${magoElegido.yearOfBirth}
                           <p>Es mago: ${magoElegido.wizard ? "Sí" : "No"}</p>
                           <p>Linaje: ${magoElegido.ancestry}</p>
@@ -42,7 +42,7 @@
                           <button><a href="index.html">VOLVER A LA PAGINA PRINCIPAL</a></button>
                         `;
                   
-                        // Insertar el template literal en la página
+                       
                         detalleMago.innerHTML = magoTemplate;
                       }
                     }
