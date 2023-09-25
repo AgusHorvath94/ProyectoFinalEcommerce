@@ -67,19 +67,26 @@ h1 {
   animation: fadeIn 3s ease; 
 }
 
-#services {
+.serv-item {
+  display : flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content :center ;
+  text-align: center;
+}
+
+.servicios {
   color: whitesmoke;
   background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4rem;
+  gap: 2rem;
 }
 
-.serv {
-  text-decoration: underline;
-}
 
-.mi-clase {
-  color: whitesmoke !important;
 
-}
 
 /* Styles del form */
 
@@ -145,44 +152,28 @@ main .contact-form .contact div input[type="reset"]:hover {
 }
 
 /* Style  del footer */
+
 footer {
   background-color: var(--color-secondary);
-  color: white;
-  padding: 5rem;
-  display: flex;
-  flex-direction: row;
+  color : whitesmoke;
+  padding: 3rem;
+}
+
+footer .footer-content .footer-info{
+  display:flex ;
+  flex-direction : row;
+  gap: 2rem;
   align-items: center;
   justify-content: center;
 
-}
-
-.footer-item > div > h4 {
-
-  font-size: 1rem;
-}
-
-
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-
-}
-
-.footer-info {
-  display: flex;
-  gap: 6rem;
-  justify-content: center;
-  align-items: center;
 
 }
 
 .footer-item {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  gap: 10px;
+  gap: 2rem;
 }
 
 .footer-icon {
@@ -197,23 +188,6 @@ footer {
   border: solid 2px;
   color: whitesmoke;
 }
-
-
-
-.footer-copy {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.h2-final {
-  background-color: #222222;
-  color: whitesmoke;
-  font-size: 1rem;
-  text-align: center;
-  
-}
-
-
 /* Media query tablet */
 @media screen and (max-width: 768px) {
   body {
@@ -229,17 +203,28 @@ footer {
 main .title div h2 {
   font-size: 3rem;
 }
-footer {
-  flex-direction: column; 
-  text-align: center; 
+
+.servicios {
+  flex-direction:column ;
 }
-.footer-info {
-  flex-direction: column; 
-  gap: 2rem; 
+
+.footer-item {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
 }
-.footer-logo {
-  margin-top: 20px; 
+
+footer .footer-content .footer-info{
+  display:flex ;
+  flex-direction : column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+
 }
+
 }
 
 /* Media query mobile */
@@ -253,28 +238,12 @@ h1 {
   font-size: 3rem;
 }
 
-  footer div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
 
-  footer div .logo-footer {
-    margin-top: 20px;
-  }
-
-  footer div div {
-    margin-top: 20px;
-  }
 
   #grid-magos{
     flex-direction: column;
   }
 
-  .mi-clase {
-    font-size: 1.15rem !important;
-  }
 
   main .contact-form .contact input {
     width: 300px;
@@ -287,11 +256,13 @@ h1 {
   }
 
   .mi-clase { 
-    font-size: 2rem !important;
+    font-size: 1.75rem ;
   }
 
   .my-3 {
-    font-size: 2.5rem !important;
+    font-size: 2rem ;
+    font-weight: bold ;
+   
   }
 
   .serv {
@@ -303,25 +274,21 @@ h1 {
     font-size: 1.5rem ;
   }
 
-.footer-h3{
-  font-size: 2rem;
-}
 
-.footer-h4 {
-  font-size: 1.75rem;
-}
-
-.h2-final {
-  font-size: 1.5rem;
-}
   
+#grid-magos  h4 {
+  font-size : 2rem;
+
+}
+
+
 
 }
 
 
 #grid-magos {
 background-image: url(../img/fondo-main3.jpg);   
-display : flex;
+display : flex; 
 flex-wrap: wrap;
 gap: 3rem;
 align-items : center;
