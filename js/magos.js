@@ -13,20 +13,39 @@
                 // Buscamos el mago por ID
                 const magoElegido = datosMagos.magos.find((mago) => mago.id === idMago);
 
-                if (magoElegido) {
-                    // Crear un template literal con los detalles del mago
-                    const magoTemplate = `
-                        <img src="${magoElegido.img}" alt="${magoElegido.alt}">
-                        <h2>${magoElegido.title}</h2>
-                        <p>${magoElegido.description}</p>
-                        <p>Precio: ${magoElegido.precio}</p>
-                        <button><a href="index.html">VOLVER A LA PAGINA PRINCIPAL</a></button>
-                    `;
+                  
+                      if (magoElegido) {
+                        // Crear un template literal con los detalles del mago
+                        const magoTemplate = `
+                         <h1> ${magoElegido.name}</h1>
+                          <img src="${magoElegido.image}" alt="${magoElegido.name}">
+                        
+                          <p>Especie: ${magoElegido.species}</p>
+                          <p>Género: ${magoElegido.gender}</p>
+                          <p>Casa: ${magoElegido.house}</p>
+                          <p>Fecha de Nacimiento: ${magoElegido.dateOfBirth}
+                          <p>Año de Nacimiento: ${magoElegido.yearOfBirth}
+                          <p>Es mago: ${magoElegido.wizard ? "Sí" : "No"}</p>
+                          <p>Linaje: ${magoElegido.ancestry}</p>
+                          <p>Color de Ojos: ${magoElegido.eyeColour}</p>
+                          <p>Color de Cabello: ${magoElegido.hairColour}</p>
+                          <p>Varita: Madera - ${magoElegido.wand.wood},  
+                          <p>Longitud - ${magoElegido.wand.length} pulgadas</p>
+                          <p>Patronus: ${magoElegido.patronus}</p>
+                          <p>Estudiante en Hogwarts: ${magoElegido.hogwartsStudent ? "Sí" : "No"}</p>
+                          <p>Personal de Hogwarts: ${magoElegido.hogwartsStaff ? "Sí" : "No"}</p>
+                          <p>Actor: ${magoElegido.actor}</p>
+                          <p>¿Está vivo?: ${magoElegido.alive ? "Sí" : "No"}</p>
+                          
+                          
+                        
+                          <button><a href="index.html">VOLVER A LA PAGINA PRINCIPAL</a></button>
+                        `;
+                  
+                        // Insertar el template literal en la página
+                        detalleMago.innerHTML = magoTemplate;
+                      }
+                    }
+                });
 
-                    // Insertar el template literal en la página
-                    detalleMago.innerHTML = magoTemplate;
-              
-                }
-            }
-        });
-
+                    

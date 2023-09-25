@@ -87,7 +87,7 @@ li {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-20px); /* Opcional: puedes añadir una pequeña transición vertical */
+    transform: translateY(-20px); 
   }
   to {
     opacity: 1;
@@ -102,7 +102,7 @@ h1 {
   text-align: center;
   margin-bottom: -0.25rem;
   padding: 2rem;
-  animation: fadeIn 3s ease; /* Duración y función de temporización personalizables */
+  animation: fadeIn 3s ease; 
 }
 
 #services {
@@ -110,8 +110,13 @@ h1 {
   background-color: var(--color-secondary);
 }
 
+.serv {
+  text-decoration: underline;
+}
+
 .mi-clase {
   color: whitesmoke !important;
+
 }
 
 /* Styles del form */
@@ -253,28 +258,6 @@ footer {
     width: 100%;
   }
 
-  header .top-bar {
-    display: none;
-  }
-
-  header .container-header .div-menu label {
-    display: block;
-  }
-  header .container-header .div-menu .menu {
-    position: absolute;
-    top: -70%;
-    right: 0;
-    transition: all 0.5s;
-  }
-
-  header .container-header .div-menu .menu ul {
-    background-color: var(--color-primary);
-    flex-direction: column;
-  }
-
-  header .container-header .div-menu .menu ul li {
-    border: solid 1px var(--color-secondary);
-  }
 
 main .title div h2 {
   font-size: 3rem;
@@ -299,11 +282,8 @@ footer {
   }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
-  main .contact-form .subscribe div {
-    display: flex;
-  }
 
   footer div {
     display: flex;
@@ -337,6 +317,36 @@ h1 {
   main .contact-form .contact div {
     gap: 3rem;
   }
+
+  .mi-clase { 
+    font-size: 2rem !important;
+  }
+
+  .my-3 {
+    font-size: 2.5rem !important;
+  }
+
+  .serv {
+    font-size: 2rem;
+    
+  }
+
+  .contact-form {
+    font-size: 1.5rem ;
+  }
+
+.footer-h3{
+  font-size: 2rem;
+}
+
+.footer-h4 {
+  font-size: 1.75rem;
+}
+
+.h2-final {
+  font-size: 1.5rem;
+}
+  
 
 }
 
@@ -401,3 +411,6 @@ padding: 3rem;                                                                  
 .page-section {
  padding: 2rem;
 }
+
+
+

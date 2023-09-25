@@ -15,11 +15,11 @@ fetch("/json/magos.json")
         // Creamos una imagen para la foto del mago
         const imagenMago = document.createElement("img");
         imagenMago.classList.add("img-mago");
-        imagenMago.src = mago.img; // Tomamos la URL de la imagen del JSON
+        imagenMago.src = mago.image; // Tomamos la URL de la imagen del JSON
   
         // Creamos una etiqueta h4 con el título del mago
         const tituloMago = document.createElement("h4");
-        tituloMago.textContent = mago.title;
+        tituloMago.textContent = mago.name;
   
         // Creamos un icono de compra
         const iconoCompra = document.createElement("img");

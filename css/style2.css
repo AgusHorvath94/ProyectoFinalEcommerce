@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+
+/* Variables */
+:root {
+  --color-primary: #f0b600;
+  --color-secondary: #760505;
+}
+
+
+/* Estilo base para la tarjeta de mago */
+.mago-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/fondo-datail.jpg);
+    background-repeat: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 1000; 
+    font-family: Belleza;
+  }
+  
+  .mago-details h1 {
+    text-decoration: overline;
+  }
+  
+  .mago-details img {
+    border-radius: 1rem;
+  }
+  
+  .mago-details button {
+    border-radius: 1rem;
+    width: 300px;
+    height: 75px;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+  }
+  
+  .mago-details button:hover {
+    background-color: var(--color-primary);
+    transition: 1s linear;
+  }
+  
+  .mago-details button a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Belleza;
+    font-size: 1rem;
+  }
+  
+  /* Media query para tablet */
+  @media (max-width: 768px) {
+    .mago-details {
+      font-size: 1.5rem; 
+      padding: 10px; 
+    }
+  
+    .mago-details button {
+      width: 200px; 
+      height: 50px; 
+    }
+  }
+  
+  /* Media query para dispositivos móviles */
+  @media (max-width: 480px) {
+    .mago-details {
+      font-size: 1.2rem; 
+      padding: 5px; 
+    }
+  
+    .mago-details button {
+      width: 150px; 
+      height: 100px; 
+      font-size: 1rem;
+    }
+  }
+  
