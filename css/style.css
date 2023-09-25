@@ -256,6 +256,7 @@ footer {
 @media screen and (max-width: 768px) {
   body {
     width: 100%;
+    max-width: 100%;
   }
 
 
@@ -276,9 +277,10 @@ footer {
 }
 
 /* Media query mobile */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   body {
     width: 100%;
+    max-width: 100%;
   }
 
 h1 {
