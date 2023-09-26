@@ -47,7 +47,7 @@ body {
 
 .navbar ul li a {
   color: var(--color-secondary) !important;
-  font-size: 1.75rem;
+  font-size: 1.50rem;
 }
 .navbar ul li a:hover {
   color: whitesmoke !important;
