@@ -8,7 +8,7 @@ fetch("magos.json")
   
     if (datosMagos) {
       datosMagos.magos.forEach((mago) => {
-        //* Creamos un elemento <div> para cada mago 
+        //* Creamos un <div> para cada mago 
         const magoCard = document.createElement("div");
         magoCard.classList.add("card"); 
   
@@ -17,7 +17,7 @@ fetch("magos.json")
         imagenMago.classList.add("img-mago");
         imagenMago.src = mago.image; 
   
-        //* Creamos una etiqueta h4 con el título del mago
+        //* Creamos un h4 con el título del mago
         const tituloMago = document.createElement("h4");
         tituloMago.textContent = mago.name;
   
@@ -46,11 +46,11 @@ fetch("magos.json")
   });
   
   function mostrarDetallesMago(mago) {
-    // Redireccionar a otra página para mostrar los detalles del mago
+    //* Redireccionamos a otra página para mostrar los detalles del mago
     window.location.href = `mago.html?id=${mago.id}`;
   }
   
-  // Formulario 
+  //* Formulario 
   const form = document.querySelector(".contact");
   const errorMessage = document.getElementById("error-message");
   

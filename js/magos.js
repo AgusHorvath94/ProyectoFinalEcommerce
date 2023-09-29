@@ -2,28 +2,26 @@
         document.addEventListener("DOMContentLoaded", () => {
             const detalleMago = document.querySelector(".mago-details");
 
-            // Obtener el ID del mago de la URL
+            //* Obtener el ID del mago 
             const urlParams = new URLSearchParams(window.location.search);
             const idMago = urlParams.get("id");
 
-            // Obtenemos los datos de los magos desde el localStorage
+            //* Obtenemos los datos de los magos desde el localStorage
             const datosMagos = JSON.parse(localStorage.getItem("magos"));
 
             if (datosMagos && datosMagos.magos) {
-                // Buscamos el mago por ID
+               
                 const magoElegido = datosMagos.magos.find((mago) => mago.id === idMago);
 
                   
                       if (magoElegido) {
-                        // Template literal con los detalles del mago
+                        //* Template  con los detalles del mago
                         const magoTemplate = `
                          <h1> ${magoElegido.name}</h1>
                           <img src="${magoElegido.image}" alt="${magoElegido.name}">
-
                           <p>Especie: ${magoElegido.species}</p>
                           <p>Género: ${magoElegido.gender}</p>
                           <p>Casa: ${magoElegido.house}</p>
-                          <p>Fecha de Nacimiento: <br> ${magoElegido.dateOfBirth}
                           <p>Año de Nacimiento: ${magoElegido.yearOfBirth}
                           <p>Es mago: ${magoElegido.wizard ? "Sí" : "No"}</p>
                           <p>Linaje: ${magoElegido.ancestry}</p>
