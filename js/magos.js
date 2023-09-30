@@ -3,10 +3,12 @@
             const detalleMago = document.querySelector(".mago-details");
 
             //* Obtener el ID del mago 
+
             const urlParams = new URLSearchParams(window.location.search);
             const idMago = urlParams.get("id");
 
             //* Obtenemos los datos de los magos desde el localStorage
+
             const datosMagos = JSON.parse(localStorage.getItem("magos"));
 
             if (datosMagos && datosMagos.magos) {
@@ -15,7 +17,9 @@
 
                   
                       if (magoElegido) {
+
                         //* Template  con los detalles del mago
+                        
                         const magoTemplate = `
                          <h1> ${magoElegido.name}</h1>
                           <img src="${magoElegido.image}" alt="${magoElegido.name}">
