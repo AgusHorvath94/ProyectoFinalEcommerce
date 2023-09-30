@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
 
 /* Variables */
+
 :root {
   --color-primary: #f0b600;
   --color-secondary: #760505;
 }
 
 
-/* Estilo base para la tarjeta de mago */
+/* Style para la tarjeta del mago */
+
 .mago-details {
     display: flex;
     flex-direction: column;
@@ -54,6 +56,7 @@
   }
   
   /* Media query para tablet */
+
   @media (max-width: 768px) {
     .mago-details {
       font-size: 1.5rem; 
@@ -70,7 +73,8 @@
     }
   }
   
-  /* Media query para dispositivos móviles */
+  /* Media query mobile */
+
   @media (max-width: 480px) {
     .mago-details {
       font-size: 1.2rem; 

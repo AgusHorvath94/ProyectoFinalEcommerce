@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
 
 /* Variables */
+
 :root {
   --color-primary: #f0b600;
   --color-secondary: #760505;
 }
 
 /* Styles generales */
+
 * {
   margin: 0;
   padding: 0;
@@ -168,6 +170,7 @@ main .contact-form .contact div input[type="reset"] {
 }
 
 /* Style del botón */
+
 .button-style,
 main .title div a:hover,
 main .contact-form .contact div input[type="submit"]:hover,
@@ -224,6 +227,7 @@ font-size: 0.9rem !important;
 
 
 /* Media query tablet */
+
 @media screen and (max-width: 768px) {
 
 
@@ -264,6 +268,7 @@ footer .footer-content .footer-info{
 }
 
 /* Media query mobile */
+
 @media screen and (max-width: 375px) {
 
 
@@ -292,7 +297,7 @@ h1 {
   }
 
   .mi-clase { 
-    font-size: 1.75rem ;
+    font-size: 1.25rem ;
   }
 
   .my-3 {
@@ -302,7 +307,7 @@ h1 {
   }
 
   .serv {
-    font-size: 1rem;
+    font-size: 2rem;
     
   }
 

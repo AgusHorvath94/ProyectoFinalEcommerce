@@ -8,20 +8,25 @@ fetch("magos.json")
   
     if (datosMagos) {
       datosMagos.magos.forEach((mago) => {
-        //* Creamos un <div> para cada mago 
+
+        //* Creamos una card para cada mago 
+
         const magoCard = document.createElement("div");
         magoCard.classList.add("card"); 
   
-        //* Creamos una imagen para la foto del mago
+        //* Creamos una img para la foto del mago
+
         const imagenMago = document.createElement("img");
         imagenMago.classList.add("img-mago");
         imagenMago.src = mago.image; 
   
-        //* Creamos un h4 con el título del mago
+        //* Creamos un h4 con el nombre del mago
+
         const tituloMago = document.createElement("h4");
         tituloMago.textContent = mago.name;
   
         //* Creamos un icono de compra
+
         const iconoCompra = document.createElement("p");
         iconoCompra.classList.add("carrito");
         const carritoTemplate = ` <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
@@ -29,28 +34,30 @@ fetch("magos.json")
       </svg>`;
         iconoCompra.innerHTML = carritoTemplate 
   
-        //* Agregamos la imagen, el título y el icono de compra a la tarjeta
         magoCard.appendChild(imagenMago);
         magoCard.appendChild(tituloMago);
         magoCard.appendChild(iconoCompra);
   
-        //* Agregamos un evento de click a la tarjeta para mostrar los detalles del mago
+        //* Agregamos un evento de click a la card para mostrar los detalles del mago
+
         magoCard.addEventListener("click", () => {
           mostrarDetallesMago(mago);
         });
   
-        //* Agregamos la tarjeta al contenedor gridMagos
         gridMagos.appendChild(magoCard);
       });
     }
   });
   
   function mostrarDetallesMago(mago) {
+
     //* Redireccionamos a otra página para mostrar los detalles del mago
+
     window.location.href = `mago.html?id=${mago.id}`;
   }
   
-  //* Formulario 
+  //* Le agregamos funcionalidad al formulario 
+  
   const form = document.querySelector(".contact");
   const errorMessage = document.getElementById("error-message");
   
