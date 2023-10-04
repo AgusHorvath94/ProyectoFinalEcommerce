@@ -43,6 +43,8 @@
                          <p>Actor: ${magoElegido.actor}</p>
                          <p>¿Está vivo?: ${magoElegido.alive ? "Sí" : "No"}</p>
                          </div>
+
+                         
                           
                         `;
                   

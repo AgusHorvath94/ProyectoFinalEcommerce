@@ -33,7 +33,7 @@ body {
   font-size: 1.3rem;
   font-weight: 600;
   font-family: Belleza;
-  height: 700px;
+  height: 750px;
 }
 
 .mago-details h1 {
@@ -50,7 +50,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 10rem;
+  gap: 4rem;
 }
 
 .mago-details img {
@@ -113,7 +113,7 @@ a {
   .mago-details {
     font-size: 1.25rem;
     padding: 10px;
-    height: 1400px;
+    height: 1300px;
   }
 
   .mago-details button {
@@ -133,7 +133,7 @@ a {
   .mago-details {
     font-size: 1.2rem;
     padding: 5px;
-    height: 1250px;
+    height: 1175px;
   }
 
   button {
