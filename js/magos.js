@@ -25,7 +25,7 @@
                          <div class="container">
                          <div class="mago-img">
                          <img src="${magoElegido.image}" alt="${magoElegido.name}">
-                         </div>                         
+                         </div>                      
                          <div class="mago-desc">
                          <p>Especie: ${magoElegido.species}</p>
                          <p>Género: ${magoElegido.gender}</p>
@@ -42,9 +42,7 @@
                          <p>Personal de Hogwarts: ${magoElegido.hogwartsStaff ? "Sí" : "No"}</p>
                          <p>Actor: ${magoElegido.actor}</p>
                          <p>¿Está vivo?: ${magoElegido.alive ? "Sí" : "No"}</p>
-                         </div>
-
-                         
+                         </div>                         
                           
                         `;
                   
