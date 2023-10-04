@@ -7,90 +7,150 @@
   --color-secondary: #760505;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-secondary);
+}
 
 /* Style para la tarjeta del mago */
 
 .mago-details {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/fondo-datail.jpg);
+  background-repeat: cover;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: Belleza;
+  height: 700px;
+}
+
+.mago-details h1 {
+  text-decoration: overline;
+  margin-top: 1rem;
+}
+
+.mago-desc {
+  line-height: 1.4;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.mago-details img {
+  border-radius: 1.5rem;
+  width: 330px;
+}
+
+button {
+  border-radius: 1rem;
+  width: 400px;
+  height: 75px;
+  font-weight: 1000;
+  font-family: Belleza;
+  font-size: 1rem;
+  background-color: #c7960a;
+  color: var(--color-secondary);
+  transition: clip-path 0.3s;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+button:hover {
+  background-color: var(--color-primary);
+  transition: 1s linear;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 1rem;
+}
+
+.mago-details button a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-family: Belleza;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+}
+
+/* Media query para tablet */
+
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
-    align-items: center;
-    background-image: url(../img/fondo-datail.jpg);
-    background-repeat: cover;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 20px;
-    color: white;
-    font-size: 2rem;
-    font-weight: 1000; 
-    font-family: Belleza;
   }
-  
-  .mago-details h1 {
-    text-decoration: overline;
+
+  .mago-desc {
+    text-align: center;
+    line-height: 2.25;
   }
-  
-  .mago-details img {
-    border-radius: 1rem;
-  
+
+  .mago-details {
+    font-size: 1.25rem;
+    padding: 10px;
+    height: 1200px;
   }
-  
+
   .mago-details button {
-    border-radius: 1rem;
-    width: 300px;
-    height: 75px;
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
+    width: 200px;
+    height: 50px;
   }
-  
-  .mago-details button:hover {
-    background-color: var(--color-primary);
-    transition: 1s linear;
+
+  .mago-desc {
+    margin-top: -8rem;
   }
-  
-  .mago-details button a {
-    text-decoration: none;
-    color: whitesmoke;
-    font-family: Belleza;
+
+  .mago-details img {
+    margin-top: 1rem;
+    width: 200px;
+  }
+}
+
+/* Media query mobile */
+
+@media (max-width: 480px) {
+  .mago-details {
+    font-size: 1.2rem;
+    padding: 5px;
+    height: 1100px;
+  }
+
+  button {
+    width: 200px;
+    height: 80px;
     font-size: 1rem;
   }
-  
-  /* Media query para tablet */
 
-  @media (max-width: 768px) {
-    .mago-details {
-      font-size: 1.5rem; 
-      padding: 10px; 
-    }
-  
-    .mago-details button {
-      width: 200px; 
-      height: 50px; 
-    }
-
-    .mago-details img {
-      width: 200px;
-    }
+  .buttons {
+    flex-direction: column;
   }
-  
-  /* Media query mobile */
 
-  @media (max-width: 480px) {
-    .mago-details {
-      font-size: 1.2rem; 
-      padding: 5px; 
-    }
-  
-    .mago-details button {
-      width: 150px; 
-      height: 100px; 
-      font-size: 1rem;
-    }
-
-    .mago-details img {
-      width: 150px;
-    }
-
-
+  .mago-details img {
+    width: 180px;
   }
-  
+}
