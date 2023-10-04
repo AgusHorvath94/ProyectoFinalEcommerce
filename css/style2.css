@@ -113,7 +113,8 @@ a {
   .mago-details {
     font-size: 1.25rem;
     padding: 10px;
-    height: 1300px;
+    height: 1400px;
+
   }
 
   .mago-details button {
@@ -135,8 +136,9 @@ a {
   .mago-details {
     font-size: 1.2rem;
     padding: 5px;
-    height: 1300px;
+    height: 1400px;
   }
+
 
 
   button {
